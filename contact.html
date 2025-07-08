@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>La Plume Libre - Contact</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <img src="../la_plume_libre/image/logo2.png" alt="Logo La Plume Libre" class="logo" />
+    <h1>La Plume Libre</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Page d’accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact">
+      <h2>Écrivez-nous un petit mot doux</h2>
+      <p>Une question, un coup de cœur, une envie de partager ? La Plume Libre est toujours à l’écoute.</p>
+
+      <form id="contact-form">
+        <label for="name">Votre prénom :</label>
+        <input type="text" id="name" name="name" required /><br><br>
+
+        <label for="email">Votre adresse e-mail :</label>
+        <input type="email" id="email" name="email" required /><br><br>
+
+        <label for="message">Votre message :</label>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit">Envoyer</button>
+      </form>
+
+      <div id="message-confirmation" class="confirmation-area"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 La Plume Libre - Tous droits réservés</p>
+  </footer>
+
+  <!-- JS placé juste avant la fin du body (meilleur chargement) -->
+  <script src="js/script.js"></script>
+</body>
+</html>
